@@ -24,6 +24,7 @@ h3{
 	padding-top: 20px;
 	text-decoration: none;
 	color: black;
+	font-size: 140%;
 }
 
 a{
@@ -37,7 +38,7 @@ a:hover{
 	text-decoration: none;
 	margin: 20px;
 	
-	border:solid 2px black;
+	border:solid 1px black;
 	border-radius: 90px;
 	padding-left: 10px;
 	padding-right: 10px;
