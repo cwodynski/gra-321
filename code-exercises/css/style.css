@@ -1,5 +1,12 @@
+html{
+	height: 100%;
+}
+
 body{
-	background-color: #fff5cf;
+	margin: 0;
+	height: 100%;
+	background-color: #f0e4d5;
+	
 }
 
 h1 {
@@ -33,7 +40,7 @@ h4{
 	font-style: normal;
 	padding-top: 20px;
 	text-decoration: none;
-	color: #fff5cf;
+	color: #f0e4d5;
 	font-size: 140%;
 
 }
@@ -69,24 +76,27 @@ a:hover{
 
 button{
 	border:solid 1px black;
-	background-color: #fff5cf;
+	background-color: #f0e4d5;
 	border-radius: 90px;
 }
 
 
 #hoverButton{
 	border:solid 1px black;
-	background-color: #fff5cf;
+	background-color: #f0e4d5;
 	border-radius: 90px;
 }
 
 #hoverButton:hover{
 	background-color: black;
-	color: #fff5cf;
+	color: #f0e4d5;
 }
 
 
 #container{
+	margin: 0;
+	height: 100%;
+	width: auto;
 	padding-left: 100px;
 	padding-top: 100px;
 }
@@ -96,9 +106,9 @@ button{
 }
 
 #imageContainer{
+	height: 50%;
 	width: 25%;
-	height: 300px;
-	
+	background-repeat: no-repeat;
 	background-image: url(../img/peeb.jpg);
 	background-size: cover;
 }
