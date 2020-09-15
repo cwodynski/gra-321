@@ -1,5 +1,5 @@
 body{
-	background-color: #fff5cf;
+	background-color: #f0e4d5;
 }
 
 h1 {
@@ -15,6 +15,7 @@ h2{
 	font-weight: 500;
 	font-style: normal;
 	line-height: 50px;
+	font-size: 150%;
 }
 
 h3{
@@ -48,6 +49,11 @@ a:hover{
 #container{
 	padding-left: 100px;
 	padding-top: 100px;
+	padding-bottom: 0px;
+}
+
+#descriptContainer{
+	padding-top: 0px;
 }
 
 #header{
