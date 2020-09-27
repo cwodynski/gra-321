@@ -1,3 +1,8 @@
+/*Fonts*/
+@import url("https://use.typekit.net/xaj0pij.css");
+
+
+
 html{
 	height: 100%;
 }
@@ -94,11 +99,18 @@ button{
 
 
 #container{
-	margin: 0;
 	height: 100%;
 	width: auto;
 	padding-left: 100px;
-	padding-top: 100px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+#layoutsContainer{
+	height: 90%;
+	display: grid;
+	grid-template-columns: 0.69fr 1fr 1fr;
+	grid-template-rows: 1fr;
 }
 
 #header{
@@ -118,10 +130,114 @@ button{
 }
 
 #magLayout{
-	margin: auto;
-	width: 600px;
-	height: auto;
+	padding-top: 50px;
+	align-self: left;
+	grid-column: 1/1;
+	margin: 0;
+	height: 600px;
+	width: auto;
 }
+
+#responsive{
+	padding-top: 50px;
+	grid-column: 2/3;
+	margin: 0;
+	height: 600px;
+	width: auto;;
+}
+
+/*stuff for digital magazine layout*/
+
+#digitalLayout{
+	width: 1440px;
+	height: 1850px;
+	background-color: grey;
+
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+
+}
+
+#headline{
+	margin-top: 56px;
+	font-family: bodoni-urw, serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 32px;
+}
+
+#subheads{
+	font-family: futura-pt, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 40px;
+	text-align: center;
+	line-height: 29px;
+}
+
+#bonJoviContainer{
+	grid-row: 1/1;
+}
+
+#bonJovi{
+	margin-left: 75px;
+	margin-right: 75px;
+	display: grid;
+	grid-template-columns: 467px 760px;
+	grid-template-rows: 0.25fr 1fr 1fr
+}
+
+#bonJoviCopy{
+	background-color: red;
+
+	margin: 0;
+
+	font-family: garamond-premier-pro, serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	width: 467px;
+	height: 573px;
+	text-align: justify;
+	text-justify:inter-word;
+
+	grid-column: 1/1
+}
+
+#bonJoviImg{
+	margin-left:64px;
+	width: 760px;
+	height: 702px;
+
+	grid-column: 2/2;
+}
+
+#patricia{
+	grid-row: 2/2;
+}
+
+
+#patriciaCopy{
+	background-color: green;
+
+	font-family: garamond-premier-pro, serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	width: 467px;
+	height: 876px;
+	text-align: justify;
+	text-justify:inter-word;
+}
+
+#patriciaImg{
+	width: 754px;
+	height: 943px;
+}
+
+/*stuff for digital magazine layout*/
+
+
 
 @media screen and (max-width: 1000px){
 
