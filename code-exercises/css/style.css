@@ -151,19 +151,27 @@ button{
 #digitalLayout{
 	width: 1440px;
 	height: 1850px;
-	background-color: grey;
+	background-color: white;
 
 	display: grid;
-	grid-template-rows: 1fr 2fr;
+	grid-template-rows: 832px 1000px;
 
 }
 
+#headlineCopyContainer{
+	height: 100%;
+	display: grid;
+	grid-template-rows: 100px 400px;
+}
+
 #headline{
-	margin-top: 56px;
+	margin-top: 0px;
+	margin-bottom: 0;
 	font-family: bodoni-urw, serif;
 	font-weight: 700;
 	font-style: normal;
 	font-size: 32px;
+	grid-row:1/1;
 }
 
 #subheads{
@@ -180,15 +188,15 @@ button{
 }
 
 #bonJovi{
+	margin-top: 56px;
 	margin-left: 75px;
 	margin-right: 75px;
 	display: grid;
 	grid-template-columns: 467px 760px;
-	grid-template-rows: 0.25fr 1fr 1fr
+	grid-template-rows:
 }
 
 #bonJoviCopy{
-	background-color: red;
 
 	margin: 0;
 
@@ -200,26 +208,27 @@ button{
 	height: 573px;
 	text-align: justify;
 	text-justify:inter-word;
-
 	grid-column: 1/1
+	grid-row:2/2;
+	float: bottom;
 }
 
 #bonJoviImg{
+	overflow: visible;
 	margin-left:64px;
 	width: 760px;
 	height: 702px;
-
 	grid-column: 2/2;
+	grid-row:1/1;
 }
 
 #patricia{
 	grid-row: 2/2;
+	display: grid;
 }
 
 
 #patriciaCopy{
-	background-color: green;
-
 	font-family: garamond-premier-pro, serif;
 	font-weight: 400;
 	font-style: normal;
@@ -228,10 +237,21 @@ button{
 	height: 876px;
 	text-align: justify;
 	text-justify:inter-word;
+	grid-column: 2/2;
+	margin-left: 26px;
 }
 
 #patriciaImg{
-	width: 754px;
+	float:right;
+	justify-content: center;
+	overflow: hidden;
+	margin-left: 72px; 
+	width: 704px;
+	height: 943px;
+	grid-column: 1/1
+}
+
+#patricaImg img{
 	height: 943px;
 }
 
