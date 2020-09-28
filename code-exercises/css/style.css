@@ -165,6 +165,7 @@ button{
 }
 
 #headline{
+	text-align: center;
 	margin-top: 0px;
 	margin-bottom: 0;
 	font-family: bodoni-urw, serif;
@@ -242,7 +243,6 @@ button{
 }
 
 #patriciaImg{
-	float:right;
 	justify-content: center;
 	overflow: hidden;
 	margin-left: 72px; 
@@ -251,8 +251,8 @@ button{
 	grid-column: 1/1
 }
 
-#patricaImg img{
-	height: 943px;
+#patriciaImg img{
+	max-height: 100%;
 }
 
 /*stuff for digital magazine layout*/
