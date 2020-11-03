@@ -8,42 +8,50 @@
     <meta name="author" content="Connor Wodynski">
 
     <link rel="stylesheet" type="text/css" href="../responsive-project/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-	<div id="nav">
-		<img id="logo" src="img/cc_Logo.png" alt="Charlie's Cafe Logo">
+	<div class="topNav">
+		<a href="#home" class="active">Logo</a>
 
-
-		<label for="toggle"> &#9776;</label>
-		<input type="checkbox" id="toggle">
-			<div class="list">
+			<div id="myLinks">
 					<a href="#about">About</a>
 					<a href="#menu">Menu</a>
 					<a href="#locations">Locations</a>
 					<a href="#contact">Contact</a>
-				</div>
 			</div>
-	
+
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
 	</div>
-</div>
 
-
+<script>
+	function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+	
+<!--
+<section id="about">
+<img src="img/cc_Gallery-1.jpg" id="gallery">
 <hr>
-
-<section id="aboutContainer">
 <h2>About</h2>
 <p>Charlie's Café, one of Sun Devil Dining’s local restaurant partners, brings the taste of Europe to ASU! Proudly serving Lavazza Italian espresso and featuring fresh European sandwiches and baked goods. Come experience the difference! With three locations on campus, there is always a Charlie's Cafe near! Charlie’s Café is located at the Hayden Library, Bio Design B Building and the College of Design.</p>
 </section>
 
+
+<section id="menu">
 <h2>Menu</h2>
 <hr>
 <h2>Hot coffee</h2>
-
-<section id="menu">
-
-
 
 	<h3 id="menuItem">Drip cofffe</h3>
 	<div id="priceContainer">
@@ -92,7 +100,7 @@
 	</div>
 
 	<h3 id="menuItem">Organic tea</h3>
-	<div id="priceConatiner">
+	<div id="priceContainer">
 		<p>$2.15 2.50 2.75</p>
 	</div>
 
@@ -276,7 +284,7 @@
 </section>
 
 
-<!-- Locations -->
+
 <section id="locations"></section>
 
 <h2 class="locationHeaders">Charlies Cafe Design North</h2>
@@ -309,6 +317,6 @@ Tempe, AZ 85287</p></a>
 
 </div>
 </section>
-
+-->
 </body>
 </html>
