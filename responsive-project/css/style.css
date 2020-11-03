@@ -27,9 +27,16 @@ label{
 	}
 
 	.topNav{
-		overflow: hidden;
-		background-color: lightblue;
-		position: relative;
+		width: 95%;
+		background-color: white;
+		position: fixed;
+	}
+
+	#logo{
+		float: left;
+		display: block;
+		height: 50px;
+		width: auto;
 	}
 
 	.topNav #myLinks{
@@ -46,49 +53,49 @@ label{
 	}
 
 	.topNav a.icon {
-			background: white;
-			display: block;
-			position: absolute;
-			right: 0;
-			top: 0;
+		height: 50px;
+		background: white;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.fa fa-bars{
+		height: 100px;
 	}
 
 	.topNav a:hover{
-		background-color: #B8F397;
-		color: white;
+		background-color: white;
+		text-decoration: underline;
 	}
 
 	.active{
+		top: 0;
+		height: 50px;
 		background-color: white;
 		color: black;
+	}
+
+	.active a:hover{
+		width: 
+		top: 0;
+		height: 50px;
+		background-color: white;
+		color: black;
+	}
+
+	.iconBar{
+		display: block;
+		background-color: black;
+		width: 45px;
+		height: 5px;
+		margin-bottom: 15px;
 	}
 
 	p{
 		font-size: 16px;
 		line-height: 25px;
-	}
-
-	/* Logo */
-	#logo{
-		margin-top: 10px;
-		display: inline-block;
-		float: left;
-		padding-left: 25px;
-		height: 50px;
-		width: auto;
-
-	}
-
-	#nav{
-		position: fixed;
-		top: 0px;
-		left: 0px;
-		right: 0px;
-		width: 100%;
-		display: block;
-		background-color: white;
-		text-align: center;
-		height: 80px;
 	}
 
 	#gallery{
@@ -142,6 +149,10 @@ label{
 		word-spacing: 30px;
 	}
 
+	.foodMenu{
+		text-align: center;
+	}
+	
 	.locationHeaders{
 		background-color:#B8F397; 
 		text-align: center;
