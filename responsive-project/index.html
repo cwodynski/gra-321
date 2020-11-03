@@ -8,13 +8,15 @@
     <meta name="author" content="Connor Wodynski">
 
     <link rel="stylesheet" type="text/css" href="../responsive-project/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
 
 	<div class="topNav">
-		<a href="#home" class="active">Logo</a>
+		<div class="logoContainer">
+		<a href="#home" class="active"><img src="img/cc_Logo.png" id="logo"></a>
+		</div>
 
 			<div id="myLinks">
 					<a href="#about">About</a>
@@ -24,7 +26,9 @@
 			</div>
 
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-				<i class="fa fa-bars"></i>
+				<div class="iconBar"></div>
+				<div class="iconBar"></div>
+				<div class="iconBar"></div>
 			</a>
 	</div>
 
@@ -39,7 +43,7 @@
 }
 </script>
 	
-<!--
+
 <section id="about">
 <img src="img/cc_Gallery-1.jpg" id="gallery">
 <hr>
@@ -158,15 +162,13 @@
 	</div>
 
 	<h3 id="menuItem">Organic tea</h3>
-	<div id="priceConatiner">
+	<div id="priceContainer">
 		<p>$2.15 2.50 2.75</p>
 	</div>
-</section>
 
 <hr>
 <h2>Hot teas</h2>
 
-<section id="menu">
 		<h3 id="menuItem">Drip cofffe</h3>
 	<div id="priceContainer">
 		<p>$2.15 2.50 2.75</p>
@@ -214,15 +216,14 @@
 	</div>
 
 	<h3 id="menuItem">Organic tea</h3>
-	<div id="priceConatiner">
+	<div id="priceContainer">
 		<p>$2.15 2.50 2.75</p>
 	</div>
-</section>
+
 
 
 <hr>
 	<h2>Iced teas</h2>
-<section id="menu">
 		<h3 id="menuItem">Drip cofffe</h3>
 	<div id="priceContainer">
 		<p>$2.15 2.50 2.75</p>
@@ -270,53 +271,64 @@
 	</div>
 
 	<h3 id="menuItem">Organic tea</h3>
-	<div id="priceConatiner">
+	<div id="priceContainer">
 		<p>$2.15 2.50 2.75</p>
 	</div>
-</section>
 
 <hr>
 	<h2>Food</h2>
-<section id="menu"></section>
+	<div class="foodMenu">
+		<p>Panini grilled sandwiches $6.75</p>
+
+		<p><strong>Italiano</strong> - <br>Grilled baguette with prosciutto, mozzarella, sliced tomato, basil pesto and a touch of balsamic vinegar</p>
+
+		<p><strong>Seville</strong> - <br>Grilled baguette with Spanish chorizo, mozzarella, sliced tomato, roasted red pepper, sun dried tomato pesto and a touch of balsamic vinegar</p>
+
+		<p><strong>Milano</strong> - <br>Grilled baguette with mozzarella, sliced tomato, fresh basil, when available, basil pesto and a touch of balsamic vinegar</p>
+
+		<p><strong>Caprese</strong> - <br>Grilled baguette with mozzarella, sliced tomato, fresh basil (when available), basil pesto and a touch of balsamic vinegar</p>
+
+		<p><strong>Vegetarian Panini</strong> - <br>Grilled herb focaccia with mozzarella, feta cheese, roasted red peppers, marinated artichoke, tomato, red onion and finished with basil pesto</p>
+
+		<p><strong>Mediterranean Chicken</strong> - <br>Grilled focaccia with spiced chicken breast, mozzarella, roasted red peppers, sliced tomato and sun dried tomato pesto. </p>
+	</div>
+
+</section>
 
 <hr>
 	<h2>Location</h2>
-</section>
+	<section id="locations"></section>
 
+	<h2 class="locationHeaders">Charlie's Cafe Design North</h2>
+	<a href="https://www.google.com/maps/dir/33.3971456,-111.9387648/charlies+cafe+design+noth/@33.4098037,-111.9492311,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x872b08dbd45c25f3:0xdd1e6f3b3aa33376!2m2!1d-111.9368474!2d33.4213555" target="_blank"> <p class="locationLinks">
+	Design North Lobby<br>
+	1001 S Forest Mall<br> 
+	Tempe, AZ 85287</p></a>
 
+	<h2 class="locationHeaders">Charlie's Cafe Hayden Library</h2>
+	<a href="https://www.google.com/maps/dir/33.3971456,-111.9387648/charlies+cafe+design+noth/@33.4098037,-111.9492311,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x872b08dbd45c25f3:0xdd1e6f3b3aa33376!2m2!1d-111.9368474!2d33.4213555"  target="_blank"> <p class="locationLinks">
+	Hayden Library<br>
+	300 Orange Mall<br> 
+	Tempe, AZ 85281</p></a>
 
-<section id="locations"></section>
+	<h2 class="locationHeaders">Charlie's Cafe BioDesign</h2>
+	<a href="https://www.google.com/maps/dir/33.3971456,-111.9387648/charlies+cafe+design+noth/@33.4098037,-111.9492311,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x872b08dbd45c25f3:0xdd1e6f3b3aa33376!2m2!1d-111.9368474!2d33.4213555" target="_blank"> <p class="locationLinks">
+	BioDesign Building B<br>
+	1001 S McAllister Ave<br> 
+	Tempe, AZ 85287</p></a>
 
-<h2 class="locationHeaders">Charlies Cafe Design North</h2>
-<a href="https://www.google.com/maps/dir/33.3971456,-111.9387648/charlies+cafe+design+noth/@33.4098037,-111.9492311,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x872b08dbd45c25f3:0xdd1e6f3b3aa33376!2m2!1d-111.9368474!2d33.4213555"> <p class="locationLinks">
-Design North Lobby<br>
-1001 S Forest Mall<br> 
-Tempe, AZ 85287</p></a>
+	<br><br><br>
+	<hr>
+	<section id="contact">
+	<div id="contactContainer">
+	<h2>Contact</h2>
+	<ul>
+	<li><a id="teleNum" href="tel:480-727-3463">480-727-3463</a></li>
+	<li><a id="email" href="mailto: hello@charliescafe.com">hello@charliescafe.com</a></li>
+	</ul>
 
-<h2 class="locationHeaders">Charlies Cafe Design North</h2>
-<a href="https://www.google.com/maps/dir/33.3971456,-111.9387648/charlies+cafe+design+noth/@33.4098037,-111.9492311,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x872b08dbd45c25f3:0xdd1e6f3b3aa33376!2m2!1d-111.9368474!2d33.4213555"> <p class="locationLinks">
-Design North Lobby<br>
-1001 S Forest Mall<br> 
-Tempe, AZ 85287</p></a>
+	</div>
+	</section>
 
-<h2 class="locationHeaders">Charlies Cafe Design North</h2>
-<a href="https://www.google.com/maps/dir/33.3971456,-111.9387648/charlies+cafe+design+noth/@33.4098037,-111.9492311,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x872b08dbd45c25f3:0xdd1e6f3b3aa33376!2m2!1d-111.9368474!2d33.4213555"> <p class="locationLinks">
-Design North Lobby<br>
-1001 S Forest Mall<br> 
-Tempe, AZ 85287</p></a>
-
-<br><br><br>
-<hr>
-<section id="contact">
-<div id="contactContainer">
-<h2>Contact</h2>
-<ul>
-<li><a id="teleNum" href="tel:480-727-3463">480-727-3463</a></li>
-<li><a id="email" href="mailto: hello@charliescafe.com">hello@charliescafe.com</a></li>
-</ul>
-
-</div>
-</section>
--->
 </body>
 </html>
