@@ -1,108 +1,123 @@
-html{
-	width: 320px;
-	margin:auto;
+html,body{
+	width: 100%;
 	font-family: helvetica;
 }
 
-h2 {
-	color: black;
-	font-size: 20px;
-
-}
-
-h3{
-
-}
-
-p{
-	font-size: 16px;
-}
-
-
-
-.list{
-	text-align: center;
-	line-height: 30px;
-	display: none;
-}
-
-.list a{
-	text-decoration: none;
-	clear: right;
-}
-
-#menuCat{
-	
-}
-
-#menuItem{
-	text-align: center;
-}
-
-#priceContainer{
-	width: 240px;
-	height: 45px;
-	margin:auto;
-}
-
-.nav{
-	background-color: lightblue;
-	text-align: right;
-	line-height: 50px;
-	border-bottom: 10px;
-}
-
-label{
-	margin-top: 25px;
-	font-size: 45px;
-	display: none;
-	width: 45px;
-	float: right;
-	border-bottom:20px;
+hr{
+	border-style: solid;
+	border-color: #B8F397;
+	background-color: #B8F397;
+	height: 3px;
 }
 
 #toggle{
 	display: none;
 }
 
+
+label{
+	display: none;
+}
+
 @media only screen and (max-width: 500px){
-	label{
-		display: block;
-		cursor: pointer;
+	html,body{
+		margin:0;
+		margin: auto;
+		width: 90%;
 	}
 
+	p{
+		font-size: 16px;
+		line-height: 25px;
+	}
+
+	/* Logo */
 	#logo{
-		margin-top: 25px;
+		margin-top: 10px;
+		display: inline-block;
+		float: left;
 		height: 50px;
 		width: auto;
-		float: left;
+
 	}
 
-	#navContainer{
-		height: 100px;
-	}
-
-	#aboutContainer{
-		margin-top: 100px;
-	}
-
-	#listContainer{
-		height: 50px;
-		margin-top: 10px;
+	#nav{
+		position: fixed;
+		width: 82%;
+		display: block;
+		background-color: grey;
+		text-align: center;
+		height: 80px;
 	}
 
 	.list{
-		margin-top: 20px;
+		padding-top: 100px;
+		display: none;
 		text-align: center;
-		width: 100%
 	}
 
 	.list a{
+		text-decoration: none;
+		color: black;
 		display: block;
-		margin-top: 20px;
-		margin:0;
+		margin: 0;
+		line-height: 40px;
+		font-size: 25px;
 	}
-	#toggle:checked + .list {
+
+	label{
+		cursor: pointer;
+		float:right;
+		margin-left: 0;
+		font-size: 50px;
 		display: block;
+	}
+	
+	#toggle:checked + .list{
+		background-color: red;
+		display: block;
+		height: 200px;
+	}  
+
+	#menu{
+		text-align: center;
+	}
+
+	#priceContainer{
+		word-spacing: 30px;
+	}
+
+	.locationHeaders{
+		background-color:#B8F397; 
+		text-align: center;
+		padding: 10px 10px 10px 10px
+	}
+
+	.locationLinks{
+		text-align: center;
+		color: black;
+		font-size: 16px;
+	}
+
+
+	#contactContainer{
+		text-align: center;
+	}
+
+	#contactContainer ul{
+		display: block;
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+		list-style: none;
+		padding-right: 32px;
+	}
+
+	#teleNum{
+		color: black;
+	}
+
+	#email{
+		color: black;
 	}
 }
