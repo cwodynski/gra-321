@@ -1,5 +1,6 @@
 html,body{
-	width: 100%;
+	margin: auto;
+	width: 90%;
 	font-family: helvetica;
 }
 
@@ -10,24 +11,20 @@ hr{
 	height: 3px;
 }
 
-#toggle{
-	display: none;
-}
-
-
 label{
 	display: none;
 }
 
-@media only screen and (max-width: 500px){
-	html,body{
-		margin:0;
-		margin: auto;
-		width: 95%;
-	}
+
+
+#desktopLinks{
+	display: none;
+}
 
 	.topNav{
-		width: 95%;
+		top: 0;
+		height: 80px;
+		width: 90%;
 		background-color: white;
 		position: fixed;
 	}
@@ -53,6 +50,7 @@ label{
 	}
 
 	.topNav a.icon {
+		padding-bottom: 0;
 		height: 50px;
 		background: white;
 		display: block;
@@ -108,21 +106,6 @@ label{
 		padding-top: 100px;
 	}
 
-	.list{
-		width: 100%;
-		padding-top: 100px;
-		display: none;
-		text-align: center;
-	}
-
-	.list a{
-		text-decoration: none;
-		color: black;
-		display: block;
-		margin: 0;
-		line-height: 40px;
-		font-size: 25px;
-	}
 
 	label{
 		cursor: pointer;
@@ -186,4 +169,208 @@ label{
 	#email{
 		color: black;
 	}
-}
+
+	.collapsible {
+		background-color: white;
+		width: 100%;
+		border:none;
+		outline: none;
+		text-align: left;
+	}
+
+	.collapsible h3{
+		display: inline-block;
+	}
+
+	.active{
+		background-color: white;
+		height: 81px;
+	}
+
+	.collapsible .active{
+		padding-bottom: 
+	}
+
+	.collapsible:hover{
+		background-color: lightgrey;
+		cursor:pointer;
+	}
+
+	.collapsible:after {
+		content: '\02795';
+		float:right;
+		margin-top: 13px;
+		font-size: 16px;
+		color: white;
+	}
+
+	.active:after {
+  		content: "\2796"; /* Unicode character for "minus" sign (-) */
+	}
+
+	.active{
+	}
+
+	.content{
+		display: none;
+		overflow: hidden;
+
+	}
+
+@media only screen and (min-width: 600px){
+	html,body{
+		width: 1144px;
+	}
+
+	h2{
+		margin: 0;
+		font-size: 40px;
+	}
+
+	h3{
+		font-size: 25px;
+	}
+
+	p{
+		font-size: 25px;
+		line-height: 40px;
+	}
+
+	.logoContainer{
+		display: inline-block;
+	}
+
+	#logo{
+		width: 327px;
+		height: auto;
+	}
+
+	.topNav{
+		display: inline-block;
+		width: 1144px;
+		height: 160px;
+		border-bottom: 5px solid #B8F397;
+	}
+
+	.topNav a.icon{
+		display: none;
+	}
+
+	#myLinks{
+		display: none;
+	}
+
+	#desktopLinks{
+		width: 565px;
+	}
+
+	#desktopLinks a{
+		display: inline-block;
+	}
+
+
+	#about{
+		padding-top: 200px;
+		height: 90%;
+		display: grid;
+		grid-template-columns: 470px 559px;
+		grid-column-gap: 109px;
+	}
+
+	#aboutCopy{	
+		grid-row:1/1;
+		grid-column: 1/1;
+		height: 528px;
+		width: 470px;
+	}
+
+
+	#gallery{
+		grid-row: 1/1;
+		grid-column: 2/2;
+	}
+
+	#gallery img{
+		float: left;
+		object-fit: cover;
+		width: 559px;
+		height: 528px; 
+	}
+
+	#menuItem{
+		text-align: left;
+	}
+
+	#priceContainer{
+		text-align: left;
+	}
+
+	#menuGroup{
+		display: grid;
+		grid-template-columns: 287px 371px 478px;
+	}
+
+	#menuItem{
+		grid-column: 2/3;
+	}
+
+	#priceContainer{
+		grid-column: 3/4;
+		word-spacing: 100px;
+	}
+
+	.foodMenu{
+		text-align: left;
+	}
+
+
+	.collapsible:after {
+		content: '\02795';
+		float:right;
+		margin-top: 20px;
+		font-size: 25px;
+		color: white;
+	}
+	
+	#locationContact{
+		margin-top: 100px;
+		display: grid;
+		width: 1137px;
+		height: 882px;
+		grid-template-columns: 660px 479px;
+	}
+
+	#loactionContainer{
+		grid-row: 1/2;
+		grid-column: 1/2;
+	}
+	
+	#contactContainer{
+		grid-row: 1/2;
+		grid-column: 2/3;
+	}
+
+	.locationHeaders{
+		width: 400px;
+		font-size: 25px;
+		text-align: left;
+	}
+
+	.locationHeaders h2{
+		font-size: 25px;
+	}
+
+	.locationLinks{
+		text-align: left;
+	}
+
+	#contactContainer{
+		text-align: left;
+	}
+
+	#contactContainer ul{
+		padding: 0;
+		text-align: left;
+		line-height: 40px;
+	}
+} 
