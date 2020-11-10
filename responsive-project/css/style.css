@@ -259,6 +259,11 @@ label{
 		border-bottom: 5px solid #B8F397;
 	}
 
+	.topNav a{
+		background-color: none;
+	}
+
+
 	.topNav a.icon{
 		display: none;
 	}
@@ -268,9 +273,7 @@ label{
 	}
 
 	#desktopLinks{
-		position: relative;
-		left: 385px;
-		height:20px; 
+		background-color: none;
 		display: inline;
 		width: 565px;
 	}
