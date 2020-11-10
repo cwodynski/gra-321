@@ -205,7 +205,7 @@ label{
 	}
 
 	.active:after {
-  		content: "\2796"; /* Unicode character for "minus" sign (-) */
+  		content: "\2796"; 
 	}
 
 	.active{
@@ -261,11 +261,16 @@ label{
 	}
 
 	#desktopLinks{
+		position: relative;
+		left: 385px;
+		height:20px; 
+		display: inline;
 		width: 565px;
 	}
 
 	#desktopLinks a{
-		display: inline-block;
+		text-align: right;
+		display: inline;
 	}
 
 
@@ -330,6 +335,10 @@ label{
 		margin-top: 20px;
 		font-size: 25px;
 		color: white;
+	}
+
+		.active:after {
+  		content: "\2796"; 
 	}
 	
 	#locationContact{
