@@ -21,6 +21,10 @@ label{
 	display: none;
 }
 
+
+	.logoContainer{
+		height: 100%;
+	}
 	.topNav{
 		top: 0;
 		height: 80px;
@@ -41,6 +45,7 @@ label{
 	}
 
 	.topNav a{
+		background-color: white;
 		color: black;
 		padding: 14px 16px;
 		text-decoration: none;
@@ -52,7 +57,7 @@ label{
 	.topNav a.icon {
 		padding-bottom: 0;
 		height: 50px;
-		background: white;
+		background-color: white;
 		display: block;
 		position: absolute;
 		right: 0;
@@ -67,6 +72,8 @@ label{
 		background-color: white;
 		text-decoration: underline;
 	}
+
+
 
 	.active{
 		top: 0;
