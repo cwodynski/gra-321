@@ -167,6 +167,7 @@ a:hover{
 		padding-top: 80px;
 		height: 400px;
 		display: none;
+		z-index: -1;
 	}
 
 	.galleryImage{
@@ -228,9 +229,10 @@ a:hover{
 
 	.fade {
   		-webkit-animation-name: fade;
-  		-webkit-animation-duration: 1.5s;
+  		-webkit-animation-duration: 1s;
   		animation-name: fade;
-  		animation-duration: 1.5s;
+  		animation-duration: 1s;
+  		z-index: -1;
 	}
 
 	@-webkit-keyframes fade {
@@ -384,11 +386,14 @@ a:hover{
 	}
 
 	#logo{
-		width: 327px;
+		left: 0;
+		padding-top: 30px;
+		width: 225px;
 		height: auto;
 	}
 
 	.topNav{
+		z-index: 1;
 		display: inline-block;
 		width: 1144px;
 		height: 160px;
