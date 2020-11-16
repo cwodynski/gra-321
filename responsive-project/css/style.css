@@ -293,6 +293,10 @@ a:hover{
 		font-size: 16px;
 	}
 
+	.locationLinks:hover{
+		font-weight: 700;
+	}
+
 
 	#contactContainer{
 		text-align: center;
