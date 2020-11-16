@@ -286,6 +286,10 @@ a:hover{
 		padding: 10px 10px 10px 10px
 	}
 
+	#locations a{
+		width: 100px;
+	}
+
 	.locationLinks{
 		text-align: center;
 		text-decoration: underline;
@@ -295,6 +299,10 @@ a:hover{
 
 	.locationLinks:hover{
 		font-weight: 700;
+	}
+
+	#locationLinkContainer{
+		width: 200px;
 	}
 
 
@@ -503,7 +511,7 @@ a:hover{
 		display: grid;
 		width: 1137px;
 		height: 882px;
-		grid-template-columns: 660px 479px;
+		grid-template-columns: 660px 4px;
 	}
 
 	#loactionContainer{
@@ -523,11 +531,14 @@ a:hover{
 	}
 
 	.locationHeaders h2{
+		margin: 0;
 		font-size: 25px;
 	}
 
 	.locationLinks{
 		text-align: left;
+		margin-right: 0;
+		width: 200px;
 	}
 
 	#contactContainer{
