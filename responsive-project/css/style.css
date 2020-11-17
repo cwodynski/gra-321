@@ -354,15 +354,15 @@ a:hover{
 	}
 
 	.collapsible:after {
-		content: '\02795';
+		content: '\025B6';
 		float:right;
 		margin-top: 13px;
 		font-size: 16px;
-		color: white;
+		color: black;
 	}
 
 	.active:after {
-  		content: "\02212"; 
+  		content: "\025BC"; 
 	}
 
 	.active{
