@@ -374,6 +374,11 @@ a:hover{
 
 	}
 
+	#teas{
+		text-align: center;
+		word-spacing: 1px;
+	}
+
 @media only screen and (min-width: 600px){
 	html,body{
 		width: 1144px;
@@ -552,6 +557,8 @@ a:hover{
 	}
 
 	#teas{
-		word-spacing: 5px;
+		grid-column: 2/3;
+		text-align: left;
+		word-spacing: 2px;
 	}
 } 
