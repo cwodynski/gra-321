@@ -22,11 +22,17 @@ html,body{
 	font-family: helvetica;
 }
 
+#pageContainer {
+    width: 90%;
+}
+
+
 hr{
 	border-style: solid;
 	border-color: #B8F397;
 	background-color: #B8F397;
 	height: 3px;
+    margin: 0;
 }
 
 h2{
@@ -330,6 +336,7 @@ a:hover{
 	.collapsible {
 		background-color: white;
 		width: 100%;
+        height: auto;
 		border:none;
 		outline: none;
 		text-align: left;
@@ -345,11 +352,11 @@ a:hover{
 	}
 
 	.collapsible .active{
-		padding-bottom: 
 	}
 
 	.collapsible:hover{
-		background-color: lightgrey;
+        transition: 0.8s;
+		background-color: #B8F397;
 		cursor:pointer;
 	}
 
@@ -362,6 +369,7 @@ a:hover{
 	}
 
 	.active:after {
+        transition: 0.5s;
   		content: "\025BC"; 
 	}
 
@@ -380,7 +388,7 @@ a:hover{
 	}
 
 @media only screen and (min-width: 600px){
-	html,body{
+	html, body{
 		width: 1144px;
 	}
 
