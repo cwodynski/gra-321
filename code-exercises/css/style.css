@@ -83,6 +83,12 @@ button{
 	border:solid 1px black;
 	background-color: #f0e4d5;
 	border-radius: 90px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+button:hover{
+    opacity: 1;
 }
 
 
@@ -283,3 +289,7 @@ button{
 	}
 }
 
+
+body {
+    width: 90%;
+}
